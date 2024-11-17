@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ff0099;
+    background-color: #f7f9fb;
     margin: 0;
     padding: 0;
     display: flex;
@@ -36,7 +36,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid #0095f6;
+    border: 3px solid #e1306c; /* Changed to pink */
     margin-bottom: 15px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
@@ -77,7 +77,7 @@ body {
 
 .stat-value {
     font-weight: bold;
-    color: #0095f6;
+    color: #e1306c; /* Changed to pink */
 }
 
 /* Favorite Song Section */
@@ -99,11 +99,11 @@ body {
 }
 
 .favorite-song audio:hover {
-    box-shadow: 0 0 15px rgba(0, 149, 246, 0.5);
+    box-shadow: 0 0 15px rgba(225, 48, 108, 0.5); /* Changed to pink */
 }
 
 .favorite-song audio::-webkit-media-controls {
-    background-color: #0095f6;
+    background-color: #e1306c; /* Changed to pink */
 }
 
 .favorite-song audio::-webkit-media-controls-play-button {
@@ -112,7 +112,7 @@ body {
 }
 
 .favorite-song audio::-webkit-media-controls-volume-slider {
-    background-color: #0095f6;
+    background-color: #e1306c; /* Changed to pink */
 }
 
 /* Post Container */
