@@ -5,35 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="background"></div>
-    <div class="spotify-container">
-        <!-- Judul -->
-        <h1>fav song</h1>
-        <!-- Gambar Album -->
-        <div class="album">
-            <img src="dika.jpg" alt="Album Cover" class="album-image">
+    <div class="music-container">
+        <div class="album-art-container">
+            <img src="dika.jpg" alt="Album Art" id="album-art" class="album-art">
         </div>
-        <!-- Informasi Lagu -->
         <div class="song-info">
-            <h2>"PENGAREPAN"</h2>
-            <p>- Lavora -</p>
+            <h2 id="song-title">"Pengarepan"</h2>
+            <p id="song-artist">- Lavora -</p>
         </div>
-        <!-- Progress Bar -->
-        <div class="progress-container">
-            <input type="range" id="progress-bar" value="0" max="100">
-        </div>
-        <!-- Tombol Kontrol -->
         <div class="controls">
-            <button id="play-pause">
-                <i class="fa fa-play">play</i>
+            <button id="play-pause-btn" class="play-btn">
+                <i class="fa fa-play"></i>
             </button>
         </div>
-        <!-- Audio -->
-        <audio id="audio" src=PENGAREPAN.mp3></audio>
+        <audio id="audio-player" src=PENGAREPAN.mp3></audio>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
