@@ -1,98 +1,95 @@
-/* Reset Default */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
-/* Latar Belakang */
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #1db954, #121212);
-    z-index: -1;
+body {
+    background: linear-gradient(45deg, #1db954, #121212);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
 
-/* Container Spotify */
-.spotify-container {
+.music-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 40px 30px;
+    border-radius: 20px;
     text-align: center;
-    color: white;
-    margin-top: 50px;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Judul */
-h1 {
-    font-size: 2.5rem;
+.music-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.album-art-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.album-art {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.song-info {
     margin-bottom: 20px;
 }
 
-/* Album */
-.album {
-    margin: 20px auto;
-}
-
-.album img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
-}
-
 .song-info h2 {
-    font-size: 1.5rem;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
 .song-info p {
-    font-size: 1rem;
-    color: #b3b3b3;
+    font-size: 16px;
+    color: #bbb;
+    font-weight: 300;
 }
 
-/* Progress Bar */
-.progress-container {
-    margin: 20px auto;
-    width: 80%;
-}
-
-#progress-bar {
-    width: 100%;
-    height: 5px;
-    border-radius: 5px;
-    background: #b3b3b3;
-    outline: none;
-    appearance: none;
-}
-
-#progress-bar::-webkit-slider-thumb {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: #1db954;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-/* Tombol Kontrol */
 .controls {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
-#play-pause {
-    background: #1db954;
+.play-btn {
+    background-color: #1db954;
     border: none;
+    padding: 15px;
+    border-radius: 50%;
     color: white;
-    padding: 15px 25px;
-    font-size: 1.5rem;
-    border-radius: 50px;
+    font-size: 35px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-#play-pause:hover {
-    background: #14843b;
+.play-btn:hover {
+    transform: scale(1.1);
+    background-color: #1ed760;
+}
+
+.play-btn:focus {
+    outline: none;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
