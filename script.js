@@ -1,41 +1,17 @@
-const playPauseButton = document.getElementById("play-pause");
-const audio = document.getElementById("audio");
-const album = document.querySelector(".album");
-const progressBar = document.getElementById("progress-bar");
-const playIcon = document.querySelector("#play-pause i");
-
+const playPauseBtn = document.getElementById('play-pause-btn');
+const audioPlayer = document.getElementById('audio-player');
+const albumArt = document.getElementById('album-art');
 let isPlaying = false;
 
-// Tombol Play/Pause
-playPauseButton.addEventListener("click", () => {
+playPauseBtn.addEventListener('click', () => {
     if (isPlaying) {
-        audio.pause();
-        playIcon.className = "fa fa-play";
-        album.classList.remove("playing");
+        audioPlayer.pause();
+        playPauseBtn.innerHTML = '<i class="fa fa-play"></i>';
+        albumArt.style.transform = 'rotate(0deg)';
     } else {
-        audio.play();
-        playIcon.className = "fa fa-pause";
-        album.classList.add("playing");
+        audioPlayer.play();
+        playPauseBtn.innerHTML = '<i class="fa fa-pause"></i>';
+        albumArt.style.transform = 'rotate(360deg)';
     }
     isPlaying = !isPlaying;
-});
-
-// Update Progress Bar
-audio.addEventListener("timeupdate", () => {
-    const progress = (audio.currentTime / audio.duration) * 100;
-    progressBar.value = progress || 0;
-});
-
-// Seek Audio
-progressBar.addEventListener("input", () => {
-    audio.currentTime = (progressBar.value / 100) * audio.duration;
-});
-
-// Debugging Events
-audio.addEventListener("canplaythrough", () => {
-    console.log("Audio is ready to play!");
-});
-
-audio.addEventListener("error", (e) => {
-    console.error("Audio failed to load:", e);
 });
