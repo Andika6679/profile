@@ -1,60 +1,98 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1DB954;
-    color: white;
+/* Reset Default */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-.spotify-container {
-    text-align: center;
-    background-color: #121212;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    width: 300px;
-}
-
-.album {
-    margin: 20px auto;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 5px solid white;
-}
-
-.album-image {
+/* Latar Belakang */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    animation: spin 5s linear infinite;
-    animation-play-state: paused;
+    background: linear-gradient(135deg, #1db954, #121212);
+    z-index: -1;
 }
 
-.controls button {
-    background-color: #1DB954;
+/* Container Spotify */
+.spotify-container {
+    text-align: center;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 16px;
+    margin-top: 50px;
+}
+
+/* Judul */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Album */
+.album {
+    margin: 20px auto;
+}
+
+.album img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.song-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.song-info p {
+    font-size: 1rem;
+    color: #b3b3b3;
+}
+
+/* Progress Bar */
+.progress-container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #b3b3b3;
+    outline: none;
+    appearance: none;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #1db954;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.controls button:hover {
-    background-color: #1ed760;
+/* Tombol Kontrol */
+.controls {
+    margin-top: 100px;
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+#play-pause {
+    background: #1db954;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#play-pause:hover {
+    background: #14843b;
 }
