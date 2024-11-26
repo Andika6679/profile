@@ -14,6 +14,11 @@ const songs = [
     title: "Pengarepan",
     file: "assets/music/PENGAREPAN.mp3",
     cover: "assets/image/dika.jpg"
+  },
+  {
+    title: "Jejantunging Kalbu",
+    file: "assets/music/jejantung.mp3",
+    cover: "assets/image/dika.jpg"
   }
 ];
 
