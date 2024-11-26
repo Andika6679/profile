@@ -8,12 +8,12 @@ const songs = [
   {
     title: "Nresnani",
     file: "assets/music/nresnani.mp3",
-    cover: "assets/image/dika1.jpeg"
+    cover: "assets/image/dika.jpg"
   },
   {
     title: "Pengarepan",
     file: "assets/music/PENGAREPAN.mp3",
-    cover: "assets/image/dika2.jpeg"
+    cover: "assets/image/dika.jpg"
   }
 ];
 
