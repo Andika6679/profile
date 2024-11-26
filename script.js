@@ -6,12 +6,12 @@ const songs = [
     cover: "assets/image/dika.jpg"
   },
   {
-    title: "Pengarepan",
-    file: "assets/music/PENGAREPAN.mp3",
+    title: "Nresnani",
+    file: "assets/music/nresnani.mp3",
     cover: "assets/image/dika1.jpeg"
   },
   {
-    title: "agomo",
+    title: "Pengarepan",
     file: "assets/music/PENGAREPAN.mp3",
     cover: "assets/image/dika2.jpeg"
   }
