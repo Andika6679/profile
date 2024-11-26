@@ -8,12 +8,12 @@ const songs = [
   {
     title: "Pengarepan",
     file: "assets/music/PENGAREPAN.mp3",
-    cover: "assets/image/dika.jpg"
+    cover: "assets/image/dika1.jpeg"
   },
   {
     title: "agomo",
     file: "assets/music/PENGAREPAN.mp3",
-    cover: "assets/image/dika.jpg"
+    cover: "assets/image/dika2.jpeg"
   }
 ];
 
