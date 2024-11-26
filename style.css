@@ -19,6 +19,7 @@ body {
 /* NAVBAR */
 nav {
   background: #191414;
+  border-radius: 15px;
   padding: 20px 0;
   border-bottom: 2px solid #1db954;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -26,7 +27,7 @@ nav {
 
 nav h1 {
   margin: 0;
-  font-size: 15px;
+  font-size: 17px;
   color: #1db954;
   text-transform: uppercase;
   letter-spacing: 3px;
