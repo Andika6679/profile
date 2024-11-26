@@ -3,17 +3,17 @@ const songs = [
   {
     title: "Bunga Abadi",
     file: "assets/music/bunga abadi.mp3",
-    cover: "assets/images/dika.jpg"
+    cover: "assets/image/dika.jpg"
   },
   {
     title: "Pengarepan",
     file: "assets/music/PENGAREPAN.mp3",
-    cover: "assets/images/dika.jpg"
+    cover: "assets/image/dika.jpg"
   },
   {
     title: "agomo",
     file: "assets/music/PENGAREPAN.mp3",
-    cover: "assets/images/dika.jpg"
+    cover: "assets/image/dika.jpg"
   }
 ];
 
